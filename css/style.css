@@ -1,9 +1,117 @@
+/* #region FONTS */
+
 @font-face {
-    font-family: customFontBold;
-    src: url(fonts/ITCAvantGardeStdBold.woff2);
+    font-family:'itc-avant-garde-gothic-pro';
+    font-weight:700;
+    font-style:normal;
+    src: local('※'),
+      url('./fonts/ITCAvantGardeStdBold.woff2') format('woff2'),
+      url('./fonts/ITCAvantGardeStdBold.woff') format('woff'),
+      url('./fonts/ITCAvantGardeStdBold.ttf') format('truetype'),
+      url('./fonts/ITCAvantGardeStdBold.otf') format('opentype'),
+      url('./fonts/ITCAvantGardeStdBold.svg#Graphik-Bold') format('svg');
+}
+@font-face {
+    font-family: 'itc-avant-garde-gothic-pro';
+    font-weight:500;
+    font-style:normal;
+    src: local('※'),
+      url('./fonts/ITCAvantGardeStdDemi.woff2') format('woff2'),
+      url('./fonts/ITCAvantGardeStdDemi.woff') format('woff'),
+      url('./fonts/ITCAvantGardeStdDemi.ttf') format('truetype'),
+      url('./fonts/ITCAvantGardeStdDemi.otf') format('opentype'),
+      url('./fonts/ITCAvantGardeStdDemi.svg#Graphik-Bold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'itc-avant-garde-gothic-pro';
+    font-weight:300;
+    font-style:normal;
+    src: local('※'),
+      url('./fonts/ITCAvantGardeStdMd.woff2') format('woff2'),
+      url('./fonts/ITCAvantGardeStdMd.woff') format('woff'),
+      url('./fonts/ITCAvantGardeStdMd.ttf') format('truetype'),
+      url('./fonts/ITCAvantGardeStdMd.otf') format('opentype'),
+      url('./fonts/ITCAvantGardeStdMd.svg#Graphik-Bold') format('svg');
 }
 
-body{
-    font-family: customFontBold;
+/* #endregion */
+
+/* #region GLOBAL */
+
+body {
+    font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+    /* color: red; */
 }
 
+a,
+a:visited,
+a:link{
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+
+/* #endregion */
+
+
+/* #region NAVIGATION */
+
+header{
+  padding: 35px 25px 10px 60px;
+}
+
+header:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+header .main-logo{
+  height: 90px;
+  float: left;
+}
+
+header .main-logo a{
+  display: block;
+  height: 100%;
+  color: transparent;
+  background: url(../img/logo_1.svg) no-repeat 50%/147px auto;
+  background-size: auto;
+}
+
+header nav{
+  float: right;
+}
+header nav ul{
+  float: right;
+  list-style: none;
+}
+header nav ul li{
+  float: right;
+  text-transform: uppercase;
+}
+header nav ul li a{
+  padding: 25 35px;
+}
+
+span.outlined{
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: #fff;
+}
+
+/* #endregion */
+
+
+/* #region NAVIGATION */
+
+.container{
+  width: 1200px;
+  margin: auto;
+}
+
+/* #endregion */
