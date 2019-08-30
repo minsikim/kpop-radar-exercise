@@ -1,0 +1,9 @@
+@font-face {
+    font-family: customFontBold;
+    src: url(fonts/ITCAvantGardeStdBold.woff2);
+}
+
+body{
+    font-family: customFontBold;
+}
+
