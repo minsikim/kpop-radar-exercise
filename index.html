@@ -4,9 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <i class="dots"></i>
+    <i class="dots"></i>
+    <i class="dots"></i>
     <header>
         <h1 class="main-logo">
             <a href="/">kpop radar</a>
@@ -15,18 +19,107 @@
             <ul>
                 <li><a href="#">Data Board</a></li>
                 <li><a href="#">Artist</a></li>
-                <li><a href="">Brief</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="#">Brief</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
         <div class="board-container">
-            
+            <div>
+                <div>
+                    <h1 class="front-title">youtube <span class="outlined">viewcount</span></h1>
+                    <p>Detects official music video's YouTube views in an hour.</p>
+                </div>
+                <div>
+                    <div class="big-circle">
+                        <div class="small-circle"></div>
+                        <div class="small-circle"></div>
+                        <div class="small-circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>sort by view</p>
+                    <div class="dropdown-menu">
+                        <div><p>growth</p></div>
+                        <div><p>▼</p></div>
+                        <div class="dropdown">
+                            <p>growth</p>
+                            <p>total</p>
+                            <p>latest</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>sort by date</p>
+                    <div class="dropdown-menu">
+                        <div><p>realtime</p></div>
+                        <div><p>▼</p></div>
+                        <div class="dropdown">
+                            <p>growth</p>
+                            <p>total</p>
+                            <p>latest</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>sort by gender</p>
+                    <div class="dropdown-menu">
+                        <div><p>☺</p></div>
+                        <div><p>▼</p></div>
+                        <div class="dropdown">
+                            <p>growth</p>
+                            <p>total</p>
+                            <p>latest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="board-header">
-
+        <div class="board-list">
+            <div>
+                <p>updated 2019.09.11 20:00</p>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/refresh.png">
+            </div>
+            <ul class="board-table">
+                <li class="board-table-head">
+                    <div>
+                        <div></div>
+                        <div>SONG</div>
+                        <div>GROWTH</div>
+                        <div>TOTAL</div>
+                        <div>RELEASE</div>
+                        <div></div>
+                    </div>
+                </li>
+                <li class="board-table-list">
+                    <div class="list-item">
+                        <div>1   -</div>
+                        <div>
+                            <div>
+                                <img class="icon-play" src="https://img.icons8.com/android/24/000000/play.png">
+                                <img class="video-thumbnail" src="img/list/001.jpg" alt="">
+                            </div>
+                            <div>
+                                <h4>독:Fear</h4>
+                                <p>세븐틴</p>
+                            </div>
+                        </div>
+                        <div><span class="icon-up">▲</span>281,336</div>
+                        <div>5,791,527</div>
+                        <div>2019.09.16 <img src="" alt=""></div>
+                        <div></div>
+                    </div>
+                    <div class="list-background">
+                        <img src="img/list/001.jpg" alt="">
+                    </div>
+                </li>
+                <li></li>
+            </ul>
         </div>
     </div>
+    <script src="js/animation.js"></script>
 </body>
 </html>
